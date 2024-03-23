@@ -1,0 +1,20 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_url": "mysql://root:@localhost/blogit",
+    "prod_url": "mysql://root:@localhost/blogit",
+    "fb_url": "https://www.facebook.com/",
+    "tw_url": "twitter.com",
+    "git_url": "github.com",
+    "blog_name": "Blogit",
+    "gmail-user": "codewithdewolf@gmail.com",
+    "gmail-password": "zpqg zhll fwjd qqwt",
+    "about_text": "Hii  i am Adeeb I like to write",
+    "no_of_post": 2,
+    "login_image": "admin.svg",
+        "admin_user":"harry",
+    "admin_password": "pass",
+    "upload_location":"C:\\Users\\ADEEB\\PycharmProjects\\Flasktut1\\static"
+  }
+}
