@@ -1,0 +1,65 @@
+
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='assets/img/home-bg.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>{{params['blog_name']}}</h1>
+              <span class="subheading">{{params['tag_line']}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-dark" role="alert">
+    Welcome to my Website , I am <strong>DeWolf</strong></strong><a href="#" class="alert-link"></a>
+</div>
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+                    <!-- Fetch it using For loop from Database-->
+        {% for post in posts %}
+<div class="post-preview">
+                        <a href="/post/{{ post.slug }}">
+                            <h2 class="post-title">{{ post.title }}</h2>
+                            <h3 class="post-subtitle"></h3>
+                            {{post.tagline}}
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#">Admin</a>
+                            on {{post.date}}
+                        </p>
+                    </div>
+                <div>{{ post.content[0:143] }}...........</div>
+
+                </li>
+                </a>
+                    {% endfor %}
+            <hr>
+            <div class="clearfix">
+                    <!-- Pager-->
+                    <a class="btn btn-primary text-uppercase float-left" href="{{prev}}">&larr; previous Posts </a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                    <a class="btn btn-primary float-right" href="{{next}}">Next Post →</a>
+                </div>
+      </div>
+            </div>
+        </div>
+
+{% endblock %}
