@@ -4,12 +4,7 @@
   A full-featured blog web app built with Flask, Clean UI, Admin panel, SMTP contact, pagination, and more!
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/languages/top/yourusername/blogit?style=flat-square" alt="Top Language" />
-  <img src="https://img.shields.io/github/license/yourusername/blogit?style=flat-square" alt="License" />
-  <img src="https://img.shields.io/github/last-commit/yourusername/blogit?style=flat-square" alt="Last Commit" />
-  <img src="https://img.shields.io/github/stars/yourusername/blogit?style=flat-square" alt="Stars" />
-</p>
+
 
 ---
 
