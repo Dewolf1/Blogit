@@ -35,9 +35,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> _Add your screenshots here!_
 
 - 📜 **Home Page**
 - 📂 **Post Detail**
